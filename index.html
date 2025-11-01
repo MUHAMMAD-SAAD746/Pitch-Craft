@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pitch Craft</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Pitch Craft</h1>
+        <p class="tagline">Turn your idea into a startup pitch!</p>
+    </header>
+
+    <main>
+        <section id="form-section">
+            <h2>Create Your Pitch</h2>
+            <form id="pitchForm">
+                <label for="idea">Your Startup Idea</label>
+                <input type="text" id="idea" placeholder="e.g. Smart Bottle with AI reminders" required />
+
+                <label for="tone">Tone</label>
+                <select id="tone" required>
+                    <option value="">Select tone</option>
+                    <option value="Professional">Professional</option>
+                    <option value="Creative">Creative</option>
+                    <option value="Fun">Fun</option>
+                    <option value="Visionary">Visionary</option>
+                </select>
+
+                <label for="language">Language</label>
+                <select id="language" required>
+                    <option value="English">English</option>
+                    <!-- <option value="Roman Urdu">Roman Urdu</option> -->
+                </select>
+
+                <button type="submit" id="generateBtn">Generate Pitch</button>
+            </form>
+        </section>
+
+        <section id="result-section" class="hidden">
+            <h2>Generated Pitch</h2>
+            <div id="result-card">
+                <p><strong>Startup Name:</strong> <span id="startup-name"></span></p>
+                <p><strong>Tagline:</strong> <span id="tagline"></span></p>
+                <p><strong>Elevator Pitch:</strong> <span id="elevator"></span></p>
+                <p><strong>Problem:</strong> <span id="problem"></span></p>
+                <p><strong>Solution:</strong> <span id="solution"></span></p>
+                <p><strong>Target Audience:</strong> <span id="audience"></span></p>
+                <p><strong>Hero Message:</strong> <span id="hero"></span></p>
+                <p><strong>Color Palette:</strong> <span id="colors"></span></p>
+                <p><strong>Logo Concept:</strong> <span id="logo"></span></p>
+            </div>
+
+            <div class="actions">
+                <button id="saveBtn">Save</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Pitch Craft by Muhammad Saad</p>
+    </footer>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
+</body>
+
+</html>
